@@ -1,0 +1,34 @@
+{
+   "background": {
+      "service_worker": "scripts/background/background.js"
+   },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "cjiggdeafkdppmdmlcdpfigbalcgbkpg@fancydino.com"
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "scripts/styles/global.css" ],
+      "js": [ "scripts/thirdParty/FileSaver.js", "scripts/thirdParty/jszip.js", "scripts/thirdParty/markdown-it.js", "scripts/thirdParty/turndown.js", "scripts/thirdParty/highlight.js", "scripts/thirdParty/sortable.js", "scripts/thirdParty/sse.js", "scripts/content/contentMessageListeners.js", "scripts/content/rowAssistant.js", "scripts/content/rowUser.js", "scripts/content/newChatPage.js", "scripts/content/modelSwitcher.js", "scripts/content/dropdown.js", "scripts/content/feedbackModal.js", "scripts/content/toneList.js", "scripts/content/writingStyleList.js", "scripts/content/languageList.js", "scripts/content/categoryList.js", "scripts/content/sortByList.js", "scripts/content/api.js", "scripts/content/global.js", "scripts/content/instructions.js", "scripts/content/navbar.js", "scripts/content/modal.js", "scripts/content/announcement.js", "scripts/content/releaseNote.js", "scripts/content/newsletterList.js", "scripts/content/timestamp.js", "scripts/content/continue.js", "scripts/content/clearConversations.js", "scripts/content/export.js", "scripts/content/copyAndCounter.js", "scripts/content/addToPromptLibrary.js", "scripts/content/promptLibrary.js", "scripts/content/promptHistory.js", "scripts/content/settings.js", "scripts/content/autoSave.js", "scripts/content/regenerateResponse.js", "scripts/content/stopGeneratingResponse.js", "scripts/content/conversation.js", "scripts/content/conversationList.js" ],
+      "matches": [ "https://chat.openai.com/*" ]
+   } ],
+   "description": "ChatGPT with superpowers! Sync history locally, search chat history, export all chats, pin messages, and access thousands of prompts",
+   "differential_fingerprint": "1.d75bcb38ff5c10b7c5d6d30547de3b8185545adb76031fbc9a93aa4c9c901f9a",
+   "host_permissions": [ "https://chat.openai.com/*" ],
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzG6ZR+j3lpHF0XrDLIXdrk25idObfq+RK7WM+pIaQmDO2nM5Y+SZJJbFwyxjWX+3V6XOgS5v9Lpnqg46OJ/W9Q5i23Usx1MXgaJBTlEFz0XG+PYK6BElhc9itS7m6oCLknin97a533tusXmm8zW7kaDGy8vycMDY6Ffbqa3sn0PqZ8bXUlAjgO91dQcB8EtlT906hwhZjtfEYvp2hdxYkRFxfuaR1WMLkxttVXv506RXJowxq0LO3aqj83QeJoXkQF1wbzCxYO1VpVGEmYIQxIKw/csusZNZs8gwJrIWtOzhMgDNOFzXNeZl0ASgoj2M9UsZp+Dunn57VT8tQyaE6QIDAQAB",
+   "manifest_version": 3,
+   "name": "Superpower ChatGPT",
+   "permissions": [ "management", "scripting", "storage", "unlimitedStorage", "webRequest", "declarativeNetRequest", "pageCapture" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4.8",
+   "web_accessible_resources": [ {
+      "matches": [ "https://chat.openai.com/*" ],
+      "resources": [ "icons/*" ]
+   } ]
+}
